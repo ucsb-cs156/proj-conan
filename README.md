@@ -1,77 +1,32 @@
-# STARTER-team02
+# proj-conan
 
-Instructions: <https://ucsb-cs156.github.io/s26/lab/team02.html>
-
-TODO: change heading above to your repo name, e.g. `# team02-s26-17`
-
-TODO: Add a link to the deployed Dokku app for your team here, e.g.
 
 Deployments:
 
 * Prod: <https://team02.dokku-17.cs.ucsb.edu>
 * QA: <https://team02-qa.dokku-17.cs.ucsb.edu>
 
-TODO: Fill in this table with correct information. 
+## Purpose
 
-| Table                     | Name         | Github Id |
-|---------------------------|--------------|-----------|
-| UCSBDiningCommonsMenuItem |              |           |
-| UCSBOrganization          |              |           |
-| RecommendationRequest     |              |           |
-| MenuItemReview            |              |           |
-| HelpRequest               |              |           |
-| Articles                  |              |           |
 
-Remember though, that in spite of these initial  assignments, it is still
-a team project.  Please help other team members to finish their work
-after completing your own.
+The purpose of proj-conan is to provide an open source platform to make content analysis easier.
+
+The initial motivation is that we have a large number of text artifacts that are suitable for content analysis, including:
+
+* Answers to reflection questions that are embedded in Gradescope exams (available as CSV downloads)
+* Answers to reflection prompts on Slack (available as JSON downloads)
+
+Traditionally, content analysis is done via either expensive purpose built tools such as InVivo, or by ad-hoc spreadsheets.  There is an opportunity for something in between that automates and streamlines the process of:
+
+* creating and managing codes and codebooks
+* selecting random subsets of data to for coding calibration rounds
+* keeping track of work progress
+* computing inter-rater reliability (Raw Agreement, Cohen's Kappa, Krippendorf's Alpha).
 
 # Versions
 * Java: 21
 * node: 22.18.0
 See [docs/versions.md](docs/versions.md) for more information on upgrading versions.
-
-# Brief overview of starter code 
-
-TODO: remove this header and content of this section before submitting.
-However leave the section `# Overview of application` and its content 
-intact.
-
-The starter code here starts with a base similar to `team01`, but with 
-some extra frontend code on top of the of backend CRUD operations
-that were present in `team01`.
-
-You can use this code as a basis to:
-* Add the backend code from team01 *in stages* as suggested in the issues (doing that in "one giant pull request" is *not recommended) 
-* Add a frontend on top of the backend CRUD features you added in team01, using the existing
-  code as examples.
-
-# Overview of application
-
-When complete, this application will have the following features:
-
-* For users that are not logged in, no new features are available.
-* For users that are logged in, they will see a new menu dropdown called Tables,
-  and under it will be menu items for each of the tables that was implemented in the 
-  application (e.g. some subset of `UCSBDiningCommonsMenuItem`, `UCSBOrganization` `RecommendationRequest`,`MenuItemReview`,`HelpRequest`, and `Articles`).
-* For users that are logged in, but are not admins, each of these menu items takes them to
-  an "index" page for that database table, where they see a list of all of the database
-  records for that table in table form.  The index page, in this case, will not have a button
-  to create database records, and it will not have buttons for Edit and Delete; only Show.
-* The Show button will take the user to a page where they see only one record from the database
-  table.
-* For users that are logged in as admins, they will also see a button on the index page that
-  takes them to a page where they can create a new record in the database.  That page, when the
-  user successfully creates a record, or cancels creating a record, 
-  should navigate back to the index page.
-* For users that are logged in as admins, in addition to the Show button, 
-  they will also see a button on the index page that
-  beside each row for Edit, and Delete.
-* The Edit button, for admins, will navigate to a page where the database record can be edited.
-  After a successful edit, the page will navigate back to the index page.
-* The Delete button, for admins, will make the api call to delete the row, and then 
-  navigate back to the index page.
-
 
 # Setup before running application
 
