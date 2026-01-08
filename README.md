@@ -6,6 +6,8 @@ Deployments:
 * Prod: <https://team02.dokku-17.cs.ucsb.edu>
 * QA: <https://team02-qa.dokku-17.cs.ucsb.edu>
 
+* [Product Planning Document](https://docs.google.com/document/d/1hyrJR01f8Evl2OwXoKHs_09EOpUVCvPTAOUnohR2RBk/edit?tab=t.0)
+
 ## Purpose
 
 
